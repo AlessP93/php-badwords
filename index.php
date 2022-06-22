@@ -3,6 +3,16 @@
     $lastname = 'Piscino';
     $text = str_replace('Alessandro', '***', $name);
     $list = ['pane', 'latte', 'uova'];
+
+    $array = [];
+
+    while (count($array) < 15) {
+        $num_rand = rand(1, 100);
+
+        if(!in_array($num_rand, $array)) {
+            $array[] = $num_rand;
+        }
+    }
 ?>
 
 
